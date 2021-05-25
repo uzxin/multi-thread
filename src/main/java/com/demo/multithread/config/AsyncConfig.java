@@ -43,7 +43,7 @@ public class AsyncConfig implements AsyncConfigurer {
         taskExecutor.setMaxPoolSize(MAX_POOL_SIZE);
         //队列中最大的数目,用来缓冲执行任务的队列
         taskExecutor.setQueueCapacity(QUEUE_CAPACITY);
-        //线程名称前缀
+        //线程名字前缀
         taskExecutor.setThreadNamePrefix(THREAD_NAME_PREFIX);
         //当线程池的任务缓存队列已满并且线程池中的线程数目达到maximumPoolSize
         // 如果还有任务到来就会采取任务拒绝策略，通常有以下四种策略：
